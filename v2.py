@@ -16,34 +16,34 @@ x_test = x_test.astype('float32') / 255.0
 x_train = x_train.reshape(-1, 28, 28, 1)
 x_test = x_test.reshape(-1, 28, 28, 1)
 
-# # Build CNN model
-# model = tf.keras.models.Sequential([
-#     Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
-#     BatchNormalization(),
-#     Conv2D(32, (3, 3), activation='relu'),
-#     MaxPooling2D((2, 2)),
-#     Dropout(0.25),
-#
-#     Conv2D(64, (3, 3), activation='relu'),
-#     BatchNormalization(),
-#     Conv2D(64, (3, 3), activation='relu'),
-#     MaxPooling2D((2, 2)),
-#     Dropout(0.25),
-#
-#     Flatten(),
-#     Dense(256, activation='relu'),
-#     BatchNormalization(),
-#     Dropout(0.5),
-#     Dense(10, activation='softmax')
-# ])
-#
-# model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-#
-# # Train with early stopping
-# early_stop = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
-# model.fit(x_train, y_train, epochs=50, validation_data=(x_test, y_test), callbacks=[early_stop])
-#
-# model.save('improved_handwritten.keras')
+# Build CNN model
+model = tf.keras.models.Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+    BatchNormalization(),
+    Conv2D(32, (3, 3), activation='relu'),
+    MaxPooling2D((2, 2)),
+    Dropout(0.25),
+
+    Conv2D(64, (3, 3), activation='relu'),
+    BatchNormalization(),
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D((2, 2)),
+    Dropout(0.25),
+
+    Flatten(),
+    Dense(256, activation='relu'),
+    BatchNormalization(),
+    Dropout(0.5),
+    Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+# Train with early stopping
+early_stop = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
+model.fit(x_train, y_train, epochs=50, validation_data=(x_test, y_test), callbacks=[early_stop])
+
+model.save('improved_handwritten.keras')
 
 # Load THE CORRECT MODEL (ensure you're loading the improved CNN model)
 model = tf.keras.models.load_model('improved_handwritten.keras')  # NOT 'handwritten.keras'

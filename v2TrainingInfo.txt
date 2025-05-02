@@ -1,0 +1,74 @@
+D:\code\digitRecognition\venv\Scripts\python.exe D:\code\digitRecognition\v2.py 
+2025-05-01 22:10:40.890534: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-01 22:10:41.992432: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+D:\code\digitRecognition\venv\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-05-01 22:10:44.649461: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 21s 10ms/step - accuracy: 0.8812 - loss: 0.3905 - val_accuracy: 0.9876 - val_loss: 0.0430
+Epoch 2/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9769 - loss: 0.0761 - val_accuracy: 0.9890 - val_loss: 0.0333
+Epoch 3/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9815 - loss: 0.0618 - val_accuracy: 0.9901 - val_loss: 0.0289
+Epoch 4/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9859 - loss: 0.0450 - val_accuracy: 0.9916 - val_loss: 0.0251
+Epoch 5/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9867 - loss: 0.0432 - val_accuracy: 0.9937 - val_loss: 0.0198
+Epoch 6/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9878 - loss: 0.0371 - val_accuracy: 0.9933 - val_loss: 0.0214
+Epoch 7/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9892 - loss: 0.0334 - val_accuracy: 0.9939 - val_loss: 0.0180
+Epoch 8/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9901 - loss: 0.0314 - val_accuracy: 0.9926 - val_loss: 0.0211
+Epoch 9/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 21s 11ms/step - accuracy: 0.9908 - loss: 0.0307 - val_accuracy: 0.9940 - val_loss: 0.0167
+Epoch 10/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9921 - loss: 0.0241 - val_accuracy: 0.9940 - val_loss: 0.0174
+Epoch 11/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 20s 11ms/step - accuracy: 0.9926 - loss: 0.0233 - val_accuracy: 0.9945 - val_loss: 0.0195
+Epoch 12/50
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 21s 11ms/step - accuracy: 0.9926 - loss: 0.0250 - val_accuracy: 0.9942 - val_loss: 0.0187
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 81ms/step
+Digit probabilities: [[9.9998116e-01 2.4397808e-09 6.0898532e-07 1.9863455e-08 1.1696404e-08
+  5.9906262e-07 1.0930018e-05 4.0441583e-09 7.3578809e-07 5.9788376e-06]]
+Predicted digit: 0
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 47ms/step
+Digit probabilities: [[2.6500877e-06 9.9952304e-01 1.2988993e-06 1.4254766e-06 4.2599477e-04
+  6.8534864e-06 1.5648719e-06 1.0493994e-05 1.8546038e-05 8.0697682e-06]]
+Predicted digit: 1
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 36ms/step
+Digit probabilities: [[7.0253045e-06 2.6232414e-07 9.9997485e-01 1.7140455e-05 6.5738948e-10
+  1.0879302e-09 2.1193107e-07 7.1293186e-08 1.3194673e-07 2.6782908e-07]]
+Predicted digit: 2
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 34ms/step
+Digit probabilities: [[2.1029673e-11 1.5391581e-13 2.6582870e-12 1.0000000e+00 4.1181828e-13
+  3.1125090e-08 6.2256138e-12 1.9270438e-11 6.3118150e-10 7.0839015e-11]]
+Predicted digit: 3
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 44ms/step
+Digit probabilities: [[1.5079216e-15 3.6038856e-12 4.7490745e-10 2.1366801e-14 1.0000000e+00
+  5.3573040e-12 6.6431912e-12 1.4453901e-12 9.0794608e-11 3.4789500e-12]]
+Predicted digit: 4
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 23ms/step
+Digit probabilities: [[4.7449400e-10 2.4784782e-08 9.2468305e-10 6.2687714e-06 6.9821939e-09
+  9.9999309e-01 1.6753573e-07 1.7007069e-09 2.8175178e-09 4.5368367e-07]]
+Predicted digit: 5
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 23ms/step
+Digit probabilities: [[1.6365950e-05 9.2980201e-07 1.2413424e-05 3.5236721e-07 2.2897198e-07
+  3.5844892e-02 9.6399075e-01 9.8910704e-08 1.3172821e-04 2.2202282e-06]]
+Predicted digit: 6
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 24ms/step
+Digit probabilities: [[2.9217783e-05 5.3914078e-04 3.4652797e-03 5.1096890e-02 3.7032701e-06
+  2.7921258e-05 3.6062356e-05 9.4443077e-01 1.4690832e-04 2.2405331e-04]]
+Predicted digit: 7
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 22ms/step
+Digit probabilities: [[2.11640948e-12 1.88277115e-13 1.26008812e-08 6.44077929e-08
+  1.24976465e-08 2.59894186e-08 1.44492978e-08 4.68311015e-11
+  9.99999881e-01 2.92997460e-10]]
+Predicted digit: 8
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 24ms/step
+Digit probabilities: [[4.4684886e-04 2.0988034e-02 2.7767936e-05 5.5700976e-01 3.4840278e-02
+  6.9642089e-02 6.1283165e-05 2.8077719e-01 1.8147787e-02 1.8058995e-02]]
+Predicted digit: 3
+
+Process finished with exit code 0
